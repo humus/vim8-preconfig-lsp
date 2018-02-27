@@ -16,6 +16,7 @@ sudo apt-get install -y build-essential \
         openssl \
         curl \
         bzip2 \
+        libevent-dev \
         libncursesw5-dev
 
 if [[ ! -f sqlite-autoconf-3220000.tar.gz ]]; then
@@ -71,7 +72,7 @@ vi_cv_path_python3=$PATH_PYTHON3 ./configure --enable-multibyte \
 make
 make install
 
-sudo apt-get -y install libevent-dev
+cd ..
 
 if [[ ! -f tmux-2.6.tar.gz ]]; then
     wget https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz

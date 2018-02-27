@@ -37,7 +37,7 @@ if filereadable(mappings_file)
 endif
 
 " options for lsc plugin
-let g:lsc_server_commands = {'python': '/home/vagrant/thin/pyls.sh'}
+let g:lsc_server_commands = {'python': 'pyls'}
 
 
 let g:lsc_auto_map = {
