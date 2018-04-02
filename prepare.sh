@@ -83,3 +83,5 @@ cd tmux-2.6
 make
 make install
 cd ..
+
+./prepare_vim.sh
